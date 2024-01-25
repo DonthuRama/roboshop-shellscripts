@@ -30,7 +30,7 @@ else
     echo "You are root user"
 fi # fi means reverse of if, indicating condition end
 
-dnf module disable nodejs -y&>> $LOGFILE
+dnf module disable nodejs -y &>> $LOGFILE
 
 VALIDATE $? "disable current nodeJS"
 
